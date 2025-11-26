@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Майнкрафт - Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: #3c3c3c;
+    line-height: 1.6;
+}
+
+.card-title, .card-subtitle, h1, h2, h3, h4, h5, h6 {
+    color: #5b5b5b;
+    text-shadow: 2px 2px 0px #8b8b8b;
+}
+
+.nav-tabs .nav-link {
+    color: #555;
+    font-size: 0.8em;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #727272;
+    border-color: #727272;
+    font-weight: bold;
+}
+
+.btn-outline-primary {
+    color: #727272;
+    border-color: #727272;
+    font-size: 0.7em;
+}
+
+.btn-outline-primary:hover, 
+.btn-outline-primary.active {
+    color: #fff;
+    background-color: #727272;
+    border-color: #727272;
+}
+
+.btn-outline-secondary {
+    color: #5e5e5e;
+    border-color: #5e5e5e;
+    font-size: 0.7em;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #5e5e5e;
+    border-color: #5e5e5e;
+}
+
+.section-highlight {
+    background-color: #79c3f1;
+    border-left: 5px solid #727272;
+    font-size: 0.9em;
+}
+
+.card {
+    border: 3px solid #8b8b8b;
+    box-shadow: 4px 4px 0px #c4c4c4;
+}
+
+.card-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Mineback.png);
+    border-bottom: 3px solid #8b8b8b;
+}
+
+.card-footer {
+    background-color: #e0e0e0;
+    border-top: 3px solid #8b8b8b;
+    color: #5b5b5b;
+    font-size: 0.7em;
+}
+
+.text-muted {
+    color: #7a7a7a !important;
+    font-size: 0.7em;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 0.8em;
+}
+
+strong {
+    color: #5e5e5e;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    
+    .btn {
+        font-size: 0.6em;
+    }
+    
+    .section-highlight {
+        font-size: 0.8em;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header class="card card-header"
+            style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Mineback.png);">
+            <div class="card-body">
+                <h3 class="card-title text-center" style="color: rgb(0, 0, 0); 
+                       text-shadow: -1px -1px 0 rgb(69, 104, 65), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 white, 1px 1px 0 white;">
+                    Майнкрафт<br><br>Wiki
+                </h3>
+            </div>
+        </header>
+
+<div class="card">
+    <div class="card-body">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="./index.html">
+                    <img src="block.png" style="height: 16px; width: 16px;">
+                    Начальная страница
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./players.html">
+                    <img src="Steeve.jpg"  style="height: 16px; width: 16px;">
+                    Доступные персонажи
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./form.html">
+                    <img src="L.jpg" style="height: 16px; width: 16px;">
+                    Создать скин
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+<h5 class='card-title text-center' id='top_of_page'>Начальная страница</h5>
+<br>
+            <div class="card-body">
+                <!-- Навигация внутри страницы -->
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-outline-primary" href="#section_1">История игры</a>
+                        <a class="btn btn-outline-primary" href="#section_2">Основные механики</a>
+                        <a class="btn btn-outline-primary" href="#section_3">Достижения</a>
+                    </div>
+                </div>
+
+                <!-- Графическая гиперссылка -->
+                <div class="text-center mb-4">
+                    <a href="#section_3" class="graphic-link">
+                        <img src="Mark.png" alt="Наши достижения" class="img-fluid"
+                            style="max-height: 120px;">
+                        <div class="mt-2">
+                            <small class="text-muted">Достижения игры</small>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Раздел 1 -->
+                <div class="section-highlight" id="section_1">
+                    <h6 class="card-subtitle mb-3">История создания Майнкрафта</h6>
+                    <p class="card-text">Майнкрафт - это культовая игра, созданная шведским программистом Маркусом Перссоном (известным как Notch) и позже развитая компанией Mojang Studios. Игра была впервые выпущена в 2009 году и с тех пор покорила миллионы игроков по всему миру.</p>
+                    <p class="card-text">Изначально Майнкрафт задумывался как простая инди-игра с пиксельной графикой, но со временем превратился в глобальное явление. В 2014 году компания Microsoft приобрела Mojang Studios за 2,5 миллиарда долларов, что подтвердило огромный успех проекта. Философия игры - "строить все, что можно вообразить" - стала девизом для целого поколения геймеров.</p>
+                    <div class="text-center mt-3">
+                        <a class="btn btn-sm btn-outline-secondary" href="#top_of_page">к началу страницы</a>
+                    </div>
+                </div>
+
+                <!-- Раздел 2 -->
+                <div class="section-highlight mt-4" id="section_2">
+                    <h6 class="card-subtitle mb-3">Основные игровые механики</h6>
+                    <p class="card-text">Майнкрафт предлагает уникальное сочетание жанров и механик:</p>
+                    <ul>
+                        <li><strong>Выживание</strong> - режим, где нужно добывать ресурсы, строить укрытия и сражаться с мобами</li>
+                        <li><strong>Творчество</strong> - неограниченные ресурсы и возможность строить без ограничений</li>
+                        <li><strong>Крафтинг</strong> - создание предметов по рецептам из собранных материалов</li>
+                        <li><strong>Исследование</strong> - огромный процедурно генерируемый мир с различными биомами</li>
+                        <li><strong>Редстоун</strong> - сложная система, позволяющая создавать механизмы и электрические цепи</li>
+                    </ul>
+                    <p class="card-text">Игра постоянно обновляется, добавляя новые измерения, мобов, предметы и возможности. От Подземья до Энда - каждый уголок мира Майнкрафта полон сюрпризов и приключений.</p>
+                    <div class="text-center mt-3">
+                        <a class="btn btn-sm btn-outline-secondary" href="#top_of_page">к началу страницы</a>
+                    </div>
+                </div>
+
+                <!-- Раздел 3 -->
+                <div class="section-highlight mt-4" id="section_3">
+                    <h6 class="card-subtitle mb-3">Ключевые достижения Майнкрафта</h6>
+                    <p class="card-text">Майнкрафт установил множество рекордов в игровой индустрии:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>🏆 Самая продаваемая игра в истории</li>
+                                <li>🌍 Более 200 миллионов проданных копий</li>
+                                <li>👥 Ежемесячная аудитория - 140 миллионов игроков</li>
+                                <li>🎮 Доступна на 20+ платформах</li>
+                                <li>📚 Образовательное издание для школ</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>🎯 Культурный феномен поколения</li>
+                                <li>🧩 Огромная библиотека модификаций</li>
+                                <li>🏗️ Невероятные постройки сообщества</li>
+                                <li>⚡ Регулярные крупные обновления</li>
+                                <li>🌟 Влияние на поп-культуру</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <a class="btn btn-sm btn-outline-secondary" href="#top_of_page">к началу страницы</a>
+                    </div>
+                </div>
+
+                <!-- Изображение с комментарием -->
+                <div class="text-center mt-5">
+                    <img src="launch.jpg" alt="Мир Майнкрафта" class="img-fluid rounded"
+                        style="max-height: 300px;">
+                    <div class="mt-2">
+                        <small class="text-muted">Бескрайний мир Майнкрафта - место, где ограничением является только ваше воображение</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="card card-footer">
+            <div class="card-body text-center">
+                <p>© 2025 МайнкрафтWiki</p>
+            </div>
+        </footer>
+    </div>
+
+    <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Подсветка активного раздела при скролле
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.section-highlight');
+            const navLinks = document.querySelectorAll('.btn-group .btn');
+
+            window.addEventListener('scroll', function () {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 100)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+
+</html>
+
+

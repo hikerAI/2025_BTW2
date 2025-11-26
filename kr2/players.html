@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Персонажи Майнкрафта - Майнкрафт Wiki</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            color: #3c3c3c;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        .card-title, .card-subtitle, h1, h2, h3, h4, h5, h6 {
+            color: #5b5b5b;
+            text-shadow: 2px 2px 0px #8b8b8b;
+        }
+
+        .nav-tabs .nav-link {
+            color: #555;
+            font-size: 0.8em;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #727272;
+            border-color: #727272;
+            font-weight: bold;
+        }
+
+        .btn-outline-primary {
+            color: #727272;
+            border-color: #727272;
+            font-size: 0.7em;
+        }
+
+        .btn-outline-primary:hover, 
+        .btn-outline-primary.active {
+            color: #fff;
+            background-color: #727272;
+            border-color: #727272;
+        }
+
+        .btn-outline-secondary {
+            color: #5e5e5e;
+            border-color: #5e5e5e;
+            font-size: 0.7em;
+        }
+
+        .btn-outline-secondary:hover {
+            color: #fff;
+            background-color: #5e5e5e;
+            border-color: #5e5e5e;
+        }
+
+        .section-highlight {
+            background-color: #79c3f1;
+            border-left: 5px solid #727272;
+            font-size: 0.9em;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border: 3px solid #8b8b8b;
+            box-shadow: 4px 4px 0px #c4c4c4;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Mineback.png);
+            border-bottom: 3px solid #8b8b8b;
+        }
+
+        .card-footer {
+            background-color: #e0e0e0;
+            border-top: 3px solid #8b8b8b;
+            color: #5b5b5b;
+            font-size: 0.7em;
+        }
+
+        .text-muted {
+            color: #7a7a7a !important;
+            font-size: 0.7em;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            font-size: 0.8em;
+        }
+
+        strong {
+            color: #5e5e5e;
+        }
+
+        .player-card {
+            /* УБРАЛ ГРАДИЕНТ - оставил простой фон */
+            background-color: #ffffff;
+            border: 2px solid #8b8b8b;
+            box-shadow: 3px 3px 0px #c4c4c4;
+        }
+
+        .player-img {
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 2px solid #8b8b8b;
+        }
+
+        .player-stats {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.7em;
+        }
+
+        .character-badge {
+            font-size: 0.6em;
+            margin: 2px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 12px;
+            }
+            
+            .btn {
+                font-size: 0.6em;
+            }
+            
+            .section-highlight {
+                font-size: 0.8em;
+            }
+            
+            .player-img {
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header class="card card-header"
+            style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Mineback.png);">
+            <div class="card-body">
+                <h3 class="card-title text-center" style="color: rgb(0, 0, 0); 
+                       text-shadow: -1px -1px 0 rgb(69, 104, 65), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 white, 1px 1px 0 white;">
+                    Майнкрафт<br><br>Wiki
+                </h3>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <img src="block.png" style="height: 16px; width: 16px;">
+                            Начальная страница
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./players.html">
+                            <img src="Steeve.jpg" style="height: 16px; width: 16px;">
+                            Игровые персонажи
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form.html">
+                            <img src="L.jpg" style="height: 16px; width: 16px;">
+                            Создать скин
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--начало уникального содержания страницы-->
+            <div class="card-body">
+                <h5 class='card-title text-center mb-4' id='top_of_page'>Игровые персонажи Майнкрафта</h5>
+
+                <!-- Раздел Главные персонажи -->
+                <div class="section-highlight" id="main_characters">
+                    <h6 class="card-subtitle mb-3">🎮 Главные персонажи</h6>
+                    <p class="card-text">Основные протагонисты игры, доступные по умолчанию для всех игроков.</p>
+                </div>
+
+                <div class="row justify-content-center" id="node_for_insert">
+                    <!-- Карточки персонажей -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card player-card">
+                            <img src="stevehead.png" class="card-img-top player-img" alt="Стив">
+                            <div class="card-body">
+                                <h5 class="card-title">Стив</h5>
+                                <p class="card-text">Оригинальный персонаж Майнкрафта. Сильный и выносливый, отлично подходит для выживания в сложных условиях.</p>
+                                <div class="player-stats">
+                                    <!-- Подписи создаются с помощью span с классами badge -->
+                                    <span class="badge bg-primary character-badge">💪 Сила</span>
+                                    <span class="badge bg-success character-badge">🛠️ Крафтинг</span>
+                                    <span class="badge bg-warning character-badge">⚔️ Бой</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card player-card">
+                            <img src="alex.png" class="card-img-top player-img" alt="Алекс">
+                            <div class="card-body">
+                                <h5 class="card-title">Алекс</h5>
+                                <p class="card-text">Быстрая и ловкая героиня с рыжими волосами. Отличный выбор для исследований и строительства.</p>
+                                <div class="player-stats">
+                                    <span class="badge bg-info character-badge">🏃‍♀️ Скорость</span>
+                                    <span class="badge bg-success character-badge">🏗️ Строительство</span>
+                                    <span class="badge bg-primary character-badge">🔍 Исследования</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Раздел Образовательное издание -->
+                <div class="section-highlight mt-5" id="education_edition">
+                    <h6 class="card-subtitle mb-3">📚 Персонажи образовательного издания</h6>
+                    <p class="card-text">Специальные персонажи, созданные для образовательной версии Майнкрафта.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="card player-card">
+                            <img src="zuri.png" class="card-img-top player-img" alt="Зури">
+                            <div class="card-body">
+                                <h5 class="card-title">Зури</h5>
+                                <p class="card-text">Любознательная исследовательница из Саванны. Обожает природу и научные открытия.</p>
+                                <div class="player-stats">
+                                    <span class="badge bg-success character-badge">🌿 Природа</span>
+                                    <span class="badge bg-info character-badge">🔬 Наука</span>
+                                    <span class="badge bg-warning character-badge">🗺️ Исследования</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card player-card">
+                            <img src="kai.jpg" class="card-img-top player-img" alt="Кай">
+                            <div class="card-body">
+                                <h5 class="card-title">Кай</h5>
+                                <p class="card-text">Технический гений из Азии. Специализируется на редстоуне и сложных механизмах.</p>
+                                <div class="player-stats">
+                                    <span class="badge bg-danger character-badge">🔴 Редстоун</span>
+                                    <span class="badge bg-primary character-badge">⚡ Техника</span>
+                                    <span class="badge bg-dark character-badge">🔧 Механизмы</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card player-card">
+                            <img src="makena.jpg" class="card-img-top player-img" alt="Макена">
+                            <div class="card-body">
+                                <h5 class="card-title">Макена</h5>
+                                <p class="card-text">Архитектор из горной местности. Создает впечатляющие постройки и конструкции.</p>
+                                <div class="player-stats">
+                                    <span class="badge bg-warning character-badge">🏔️ Архитектура</span>
+                                    <span class="badge bg-success character-badge">🏠 Строительство</span>
+                                    <span class="badge bg-info character-badge">🎨 Дизайн</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card player-card">
+                            <img src="jzxe.png" class="card-img-top player-img" alt="Ари">
+                            <div class="card-body">
+                                <h5 class="card-title">Ари</h5>
+                                <p class="card-text">Креативный художник и дизайнер. Превращает обычные блоки в произведения искусства.</p>
+                                <div class="player-stats">
+                                    <span class="badge bg-info character-badge">🎨 Искусство</span>
+                                    <span class="badge bg-success character-badge">✨ Креативность</span>
+                                    <span class="badge bg-warning character-badge">🌈 Дизайн</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новые персонажи -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card player-card">
+                            <img src="sunny.png" class="card-img-top player-img" alt="Санни">
+                            <div class="card-body">
+                                <h5 class="card-title">Санни</h5>
+                                <p class="card-text">Оптимистичная исследовательница пустынь. Эксперт по выживанию в жарком климате и поиску сокровищ.</p>
+                                <div class="player-stats">
+                                    <span class="badge bg-warning character-badge">☀️ Пустыня</span>
+                                    <span class="badge bg-success character-badge">🏜️ Выживание</span>
+                                    <span class="badge bg-info character-badge">💎 Сокровища</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card player-card">
+                            <img src="efe.jpg" class="card-img-top player-img" alt="Эфе">
+                            <div class="card-body">
+                                <h5 class="card-title">Эфе</h5>
+                                <p class="card-text">Инновационный изобретатель из современных городов. Создает передовые технологии и автоматизированные системы.</p>
+                                <div class="player-stats">
+                                    <span class="badge bg-primary character-badge">🏙️ Инновации</span>
+                                    <span class="badge bg-dark character-badge">🤖 Автоматизация</span>
+                                    <span class="badge bg-info character-badge">🚀 Технологии</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Кнопка возврата -->
+                <div class="text-center mt-4">
+                    <a class="btn btn-sm btn-outline-secondary" href="#top_of_page">к началу страницы</a>
+                </div>
+            </div>
+            <!--окончание уникального содержания страницы-->
+        </div>
+
+        <footer class="card card-footer">
+            <div class="card-body text-center">
+                <p>© 2025 МайнкрафтWiki</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
