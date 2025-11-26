@@ -100,7 +100,6 @@
         }
 
         .player-card {
-            /* УБРАЛ ГРАДИЕНТ - оставил простой фон */
             background-color: #ffffff;
             border: 2px solid #8b8b8b;
             box-shadow: 3px 3px 0px #c4c4c4;
@@ -108,8 +107,10 @@
 
         .player-img {
             height: 400px;
-            object-fit: cover;
+            width: 100%;
+            object-fit: contain;
             border-bottom: 2px solid #8b8b8b;
+            background-color: #f8f9fa;
         }
 
         .player-stats {
@@ -138,7 +139,26 @@
             }
             
             .player-img {
-                height: 100px;
+                height: 250px;
+                object-fit: contain;
+            }
+            
+            .player-card .card-body {
+                padding: 10px;
+            }
+            
+            .player-card .card-title {
+                font-size: 0.7em;
+            }
+            
+            .player-card .card-text {
+                font-size: 0.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .player-img {
+                height: 200px;
             }
         }
     </style>
@@ -181,8 +201,9 @@
                     </li>
                 </ul>
             </div>
+        </div>
 
-            <!--начало уникального содержания страницы-->
+        <div class="card">
             <div class="card-body">
                 <h5 class='card-title text-center mb-4' id='top_of_page'>Игровые персонажи Майнкрафта</h5>
 
@@ -192,7 +213,7 @@
                     <p class="card-text">Основные протагонисты игры, доступные по умолчанию для всех игроков.</p>
                 </div>
 
-                <div class="row justify-content-center" id="node_for_insert">
+                <div class="row justify-content-center">
                     <!-- Карточки персонажей -->
                     <div class="col-md-4 mb-4">
                         <div class="card player-card">
@@ -201,7 +222,6 @@
                                 <h5 class="card-title">Стив</h5>
                                 <p class="card-text">Оригинальный персонаж Майнкрафта. Сильный и выносливый, отлично подходит для выживания в сложных условиях.</p>
                                 <div class="player-stats">
-                                    <!-- Подписи создаются с помощью span с классами badge -->
                                     <span class="badge bg-primary character-badge">💪 Сила</span>
                                     <span class="badge bg-success character-badge">🛠️ Крафтинг</span>
                                     <span class="badge bg-warning character-badge">⚔️ Бой</span>
@@ -330,7 +350,6 @@
                     <a class="btn btn-sm btn-outline-secondary" href="#top_of_page">к началу страницы</a>
                 </div>
             </div>
-            <!--окончание уникального содержания страницы-->
         </div>
 
         <footer class="card card-footer">
